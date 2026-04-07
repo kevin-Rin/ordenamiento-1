@@ -1,9 +1,21 @@
+
+import java.util.*;
+
 public class Ordenamiento {
     public static void main(String[] args) {
-        int arr[] = {5, 2, 11, -8, 115, 56, -3};
-        ordenar(arr);
         
+        System.out.println("ingrese el tamaño del arreglo");
+        
+        Scanner teclado = new Scanner(System.in);
+        
+        int n = teclado.nextInt();
+        
+   
+        int arr[] = new int [n];
+        
+         ordenar(arr);
         System.out.println(java.util.Arrays.toString(arr));
+        
     }
     private static void ordenar(int v[]) {
         for (int i = 0; i < v.length-1; i++) {
