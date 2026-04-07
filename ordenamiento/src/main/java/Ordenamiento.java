@@ -8,11 +8,12 @@ public class Ordenamiento {
         
         Scanner teclado = new Scanner(System.in);
         
-        int n = teclado.nextInt();
-        
-   
+        int n = teclado.nextInt();  
         int arr[] = new int [n];
-        
+        for (int i = 0; i < n; i++){
+            System.out.println("ingrese numero para la pocición "+ i +":");  
+        arr[i]= teclado.nextInt();
+        }
          ordenar(arr);
         System.out.println(java.util.Arrays.toString(arr));
         
